@@ -1,0 +1,15 @@
+const mongoose = require('mongoose');
+
+const leadSchema = new mongoose.Schema({
+  phoneNumber: String,
+  panelsNeeded: Number,
+  requiredArea: Number,
+  capitalNeeded: Number,
+  breakevenYears: Number,
+  earnings25Years: Number,
+  next25YearsEarnings:Number,
+});
+
+const Lead = mongoose.model('Lead', leadSchema);
+console.log('in ladddddddddddddddd');
+module.exports = Lead;
